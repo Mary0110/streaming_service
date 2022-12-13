@@ -18,35 +18,31 @@ public class HomeController : Controller
         dbcommand = DB_Manager.getCommand();
     }
 
- //    [HttpGet]
- //    public IActionResult AddOffer()
- //    {
- //        var model = new AddDirectorModel();
- //
- //        dbcommand.CommandText =
- //            @"SELECT apartments.id, apartmentstypes.apartments_type_name, apartments.count_rooms, apartments.count_floors, apartments.count_sleeping_places, apartmentsclasses.apartments_class_name FROM apartments
-	// JOIN apartmentstypes ON apartments.apartments_type_id = apartmentstypes.id
-	// 	JOIN apartmentsclasses ON apartments.apartments_class_id = apartmentsclasses.id";
- //
- //        var dataReader = dbcommand.ExecuteReader();
- //        // while (dataReader.Read())
- //        // {
- //        //     var tmp = new Director();
- //        //
- //        //     tmp.id = (Guid)dataReader.GetValue(0);
- //        //     tmp.AppTypeName = dataReader.GetValue(1) as string;
- //        //     tmp.CountRooms = (int)dataReader.GetValue(2);
- //        //     tmp.CountFloors = (int)dataReader.GetValue(3);
- //        //     tmp.CountSleepingPlaces = (int)dataReader.GetValue(4);
- //        //     tmp.AppClassName = dataReader.GetValue(5) as string;
- //        //
- //        //     model.Apartments.Add(tmp);
- //        // }
- //
- //        dataReader.Close();
- //
- //        return View(model);
- //    }
+    [HttpGet]
+    public IActionResult Index()
+    {
+        var model = new List<Director>();
+ 
+        dbcommand.CommandText =
+            @"SELECT * FROM directors";
+ 
+        var dataReader = dbcommand.ExecuteReader();
+        while (dataReader.Read())
+        {
+            var tmp = new Director();
+        
+            tmp.DirectorId = (uint)dataReader.GetValue(0);
+            tmp.DirectorName = (string)dataReader.GetValue(1) as string;
+            tmp.DirectorSurname = (string)dataReader.GetValue(2);
+            tmp.DateOfBirth = (DateTime)dataReader.GetValue(3);
+            tmp.Gender = (string)dataReader.GetValue(4);
+        
+            model.Add(tmp);
+        }
+        
+        dataReader.Close();
+        return View(model);
+    }
 
     public IActionResult Privacy()
     {
@@ -58,4 +54,29 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+
+    public IActionResult Films()
+    {
+        var model = new List<Movie>();
+ 
+        dbcommand.CommandText =
+            @"SELECT * FROM movies m JOIN directors";
+ 
+        var dataReader = dbcommand.ExecuteReader();
+        while (dataReader.Read())
+        {
+            var tmp = new Movie();
+        
+            tmp.DirectorId = (uint)dataReader.GetValue(0);
+            tmp.DirectorName = (string)dataReader.GetValue(1) as string;
+            tmp.DirectorSurname = (string)dataReader.GetValue(2);
+            tmp.DateOfBirth = (DateTime)dataReader.GetValue(3);
+            tmp.Gender = (string)dataReader.GetValue(4);
+        
+            model.Add(tmp);
+        }
+        
+        dataReader.Close();
+        return View(model);    }
 }

@@ -14,7 +14,7 @@ public class AddDirectorModel
 
     [Required] 
     [DataType(DataType.Date)] 
-    public DateTime Date { get; set; }
+    public DateTime DateOfBirth { get; set; }
 
     [Required] 
     public Gender Gender { get; set; }
@@ -23,7 +23,7 @@ public class AddDirectorModel
 
 public enum Gender
 {
-    MALE,
-    FEMALE,
-    NON_BINARY
+    MALE = 0,
+    FEMALE = 1,
+    NON_BINARY = 2
 }
