@@ -1,4 +1,4 @@
-@model System.Collections.Generic.List<streaming_service.Entities.Director>
+﻿@model System.Collections.Generic.List<streaming_service.Entities.Director>
 
 @{
     ViewBag.Title = "title";
@@ -10,7 +10,7 @@
 @foreach (var director in Model)
 {
     <hr>
-    <table class="table table-hover table-dark">
+    <table class="table table-hover ">
         <tbody>
         <tr>
             <th scope="row"> name</th>
@@ -26,7 +26,7 @@
         </tr>
         <tr>
             <th scope="row">date</th>
-            <td>@director.DateOfBirth</td>
+            <td>@director.DateOfBirth.ToString("dd/MM/yyyy")</td>
         </tr>
 
 

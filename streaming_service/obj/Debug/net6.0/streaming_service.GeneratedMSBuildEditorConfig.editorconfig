@@ -15,12 +15,68 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/mariaraniuk/RiderProjects/streaming_service/streaming_service
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Admin/AddActor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWRkQWN0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Admin/AddActorsToMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWRkQWN0b3JzVG9Nb3ZpZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Admin/AddDirector.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWRkRGlyZWN0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Admin/AddDirectorsToMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWRkRGlyZWN0b3JzVG9Nb3ZpZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Admin/AddGenresToMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWRkR2VucmVzVG9Nb3ZpZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Admin/AddMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWRkTW92aWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Admin/Clients.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQ2xpZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Admin/Logs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vTG9ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Admin/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Client/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50L1Byb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Home/ActorsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BY3RvcnNJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Home/DirectorsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EaXJlY3RvcnNJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Home/GetDirectors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9HZXREaXJlY3RvcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Home/MoviesIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Nb3ZpZXNJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/mariaraniuk/RiderProjects/streaming_service/streaming_service/Views/Home/Privacy.cshtml]

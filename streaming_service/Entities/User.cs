@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace streaming_service
+namespace streaming_service.Entities
 {
     public partial class User
     {
@@ -19,7 +19,7 @@ namespace streaming_service
         public string Password { get; set; } = null!;
         public DateTime JoinedDate { get; set; }
         public string Gender { get; set; } = null!;
-        public uint Age { get; set; }
+        public DateTime Age { get; set; }
         public uint SubscriptionId { get; set; }
         public uint RoleId { get; set; }
         public double Balance { get; set; }

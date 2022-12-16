@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Profile";
+}
+
+@model ClientProfileModel
+
+<form asp-action="Profile" asp-controller="Client" asp-anti-forgery="true">
+
+    <div style="display: flex; flex-direction: row">
+        <h3>Hello @Model?.Login</h3>
+    </div>
+    <table class="table table-hover table-dark">
+        <tbody>
+        <tr>
+            <th scope="row">First Name</th>
+            <td>@Model.Username</td>
+        </tr>
+        <tr>
+            <th scope="row">Date Of Birth</th>
+            <td>@Model.DateOfBirth</td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+
+<form asp-action="UpdateClient" asp-controller="Client" asp-route-model="@Model" asp-anti-forgery="true" method="get">
+    <input type="submit" value="Settings" style="margin-top: 10px">
+</form>
+
+<form asp-action="OrdersList" asp-controller="Client" asp-anti-forgery="true" method="get">
+    <input type="submit" value="Orders" style="margin-top: 10px">
+</form>

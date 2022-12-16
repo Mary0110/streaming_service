@@ -1,24 +1,24 @@
-﻿@model System.Collections.Generic.List<streaming_service.Director>
+@model System.Collections.Generic.List<streaming_service.Entities.Actor>
 
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
 
-<h2>directors</h2>
+<h2>actors</h2>
 
 @foreach (var director in Model)
 {
     <hr>
-    <table class="table table-hover table-dark">
+    <table class="table table-hover ">
         <tbody>
         <tr>
             <th scope="row"> name</th>
-            <td>@director.DirectorName.ToString()</td>
+            <td>@director.ActorName.ToString()</td>
         </tr>
         <tr>
             <th scope="row">surname</th>
-            <td>@director.DirectorSurname.ToString()</td>
+            <td>@director.ActorSurname.ToString()</td>
         </tr>
         <tr>
             <th scope="row">gender</th>

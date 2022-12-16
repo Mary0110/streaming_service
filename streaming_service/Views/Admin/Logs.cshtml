@@ -1,0 +1,31 @@
+@model streaming_service.Models.Admin.LogModel
+<h1> Logs </h1>
+@foreach (var log in Model.logs)
+{
+    <hr>
+    <table class="table table-hover">
+        <tbody>
+        <tr>
+                    <th scope="row">id</th>
+                    <td>@log.LoggerId</td>
+                </tr>
+        <tr>
+            <th scope="row">action</th>
+            <td>@log.Action</td>
+        </tr>
+        <tr>
+            <th scope="row">category</th>
+            <td>@log.ActionCategory</td>
+        </tr>
+        <tr>
+            <th scope="row">time</th>
+            <td>@log.Time</td>
+        </tr>
+        <tr>
+            <th scope="row">user</th>
+            <td>@log.UserId</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+}

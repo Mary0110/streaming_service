@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace streaming_service
+namespace streaming_service.Entities
 {
     public partial class Director
     {

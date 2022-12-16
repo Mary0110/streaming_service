@@ -1,0 +1,44 @@
+@using streaming_service.Models.Admin
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model AddActorModel
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Add actor</h2>
+<form asp-action="AddActor" asp-controller="Admin" asp-anti-forgery="true">
+<div class="validation" asp-validation-summary="All"></div>
+<div>
+    <div>
+        <label asp-for="Name">name</label><br/>
+        <input type="text" asp-for="Name"/>
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div style="margin-top: 10px">
+        <label asp-for="Surname">surname</label><br/>
+        <input type="text" asp-for="Surname"/>
+        <span asp-validation-for="Surname"></span>
+    </div>
+    <div style="margin-top: 10px">
+        <label asp-for="Gender">Gender</label><br/>
+        <input type="radio"  name="gender" value="@Gender.MALE.ToString()" asp-for="Gender"/>
+        male
+        <input type="radio" name="gender" value="@Gender.FEMALE.ToString()" asp-for="Gender"/>
+        female
+        <input type="radio" name="gender" value="@Gender.NON_BINARY.ToString()" asp-for="Gender"/>
+        not binary
+        @* <input type="text" asp-for="Gender"/> *@
+        <span asp-validation-for="Gender"></span>
+    </div>
+    <div style="margin-top: 10px">
+        <label asp-for="DateOfBirth">date of birth</label><br/>
+        <input type="date" asp-for="DateOfBirth"/>
+        <span asp-validation-for="DateOfBirth"></span>
+    </div>
+    <div style="margin-top: 10px">
+        <input type="submit" value="submit"/>
+    </div>
+
+</div>
+</form>

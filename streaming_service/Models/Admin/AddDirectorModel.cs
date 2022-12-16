@@ -1,23 +1,24 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace streaming_service.Models;
+namespace streaming_service.Models.Admin;
 
 public class AddDirectorModel
 {
     [Required]
     [DataType(DataType.Text)] 
-    public double Name { get; set; }
+    public string Name { get; set; }
 
     [Required]
     [DataType(DataType.Text)] 
-    public int Surname { get; set; }
+    public string Surname { get; set; }
 
     [Required] 
     [DataType(DataType.Date)] 
     public DateTime DateOfBirth { get; set; }
 
     [Required] 
-    public Gender Gender { get; set; }
+    [DataType(DataType.Text)]
+    public string Gender { get; set; }
     
 }
 

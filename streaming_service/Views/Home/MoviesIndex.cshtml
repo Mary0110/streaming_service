@@ -1,0 +1,59 @@
+@using streaming_service.Entities
+@model System.Collections.Generic.List<streaming_service.Models.MovieModel>
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>title</h2>
+@foreach (var mm in Model)
+{
+    <hr>
+    <table class="table table-hover ">
+        <tbody>
+        <tr>
+            <th scope="row"> name</th>
+            <td>@mm.Movie.MovieName.ToString()</td>
+        </tr>
+        <tr>
+            <th scope="row">descr</th>
+            <td>@mm.Movie.Description.ToString()</td>
+        </tr>
+        <tr>
+            <th scope="row">rating</th>
+            <td>@mm.Movie.Rating</td>
+        </tr>
+        <tr>
+            <th scope="row">time</th>
+            <td>@mm.Movie.Time.ToString()</td>
+        </tr>
+        <tr>
+            <th scope="row">subtitles</th>
+            <td>@mm.Movie.SubtitlesAvailable</td>
+        </tr>
+        <tr>
+            <th scope="row">year</th>
+            <td>@mm.Movie.Year</td>
+        </tr>
+        <tr>
+            @* @foreach (var dir in mm.Directors) *@
+            @* { *@
+            <tr>
+                <th rowspan="100" scope="rowgroup">Directors</th>
+
+            </tr>
+            
+        
+       @foreach (var dir in mm.Directors)
+       {
+           <tr>
+               <td scope="row">@dir.DirectorName @dir.DirectorSurname</td>
+
+           </tr>
+       }
+            
+
+        </tr>
+        </tbody>
+    </table>
+}
